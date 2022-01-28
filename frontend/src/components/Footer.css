@@ -1,0 +1,131 @@
+.footer{
+  background-color: rgb(252,39,121);
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+}
+
+.footer .item{
+  padding: 10px;
+}
+
+.footer .footer1{
+  background-color: rgb(63,65,77);
+  display: flex;
+  padding: 0px 0px 0px 100px;
+  cursor: pointer;
+}
+
+input[type="email"]{
+  font-weight: 600;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 6px 12px;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 20px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline: none;
+}
+
+button{
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin: 5px;
+}
+
+.google{
+  float: left;
+  width:  120px;
+  height: 100px;
+  object-fit: cover;
+  
+}
+
+.apple {
+  float: left;
+  width:  150px;
+  height: 80px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.footer .footer2{
+   background-color: rgb(140,141,148);
+   display: flex;
+   padding: 30px;
+   font-size: 13px;
+}
+
+.footer .footer3{
+  background-color: rgb(243,243,243);
+  color: black;
+  display: flex;
+  padding: 40px;
+}
+
+.footer-item3{
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer-item{
+  padding: 20px;
+  display: flex;
+}
+
+.footer-item2{
+  padding: 50px;
+}
+
+.footer-item2 p:hover{
+  color: rgb(252,39,121);
+  cursor: pointer;
+}
+
+.footer-item .hover:hover{
+  color: pink;
+}
+
+.footer .footer3 img{
+  padding-right: 20px;
+}
+
+.footer hr{
+  width: 100px;
+  margin-left: 0px;
+  color: 1px solid rgb(182, 177, 177);
+}
+
+.footer .footer4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.footer .foot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.fixed-bottom {
+  height:40px;
+  width: 250px;
+  box-shadow: -1px 2px 1px 10px white;
+  background-color: white;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-top: 80px;
+  cursor: pointer;
+}
