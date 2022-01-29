@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react';
 import axios from "axios";
 import './Signin.css';
+import { Link } from 'react-router-dom';
 export default function Signin() {
   useEffect(async()=>{
     let resposedata =  await axios.post("http://localhost:8080/")
@@ -9,6 +10,7 @@ export default function Signin() {
   return (
   
         <div className='signin' style={{border:"1px solid gray", width:"380px", margin:"60px 200px 80px 560px", borderRadius:"10px","background-color":" rgb(243,243,243)"}}>
+         <Link to="/" ><div><img src='images/close.svg'/></div></Link>
           <div className='signin1'>
           <h1 >Sign in</h1>
           <p>To quickly find your favourites items,<br/> saved addresses and payments.</p>
