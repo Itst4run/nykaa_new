@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Signin from './components/Signin';
-import Product from './components/Product';
+import Product from './components/Productpage';
 function App() {
   return (
     

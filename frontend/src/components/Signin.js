@@ -10,7 +10,7 @@ export default function Signin() {
   return (
   
         <div className='signin' style={{border:"1px solid gray", width:"380px", margin:"60px 200px 80px 560px", borderRadius:"10px","background-color":" rgb(243,243,243)"}}>
-         <Link to="/" ><div><img src='images/close.svg'/></div></Link>
+         <Link to="/" ><div><img src='images/close.svg' height={30} /></div></Link>
           <div className='signin1'>
           <h1 >Sign in</h1>
           <p>To quickly find your favourites items,<br/> saved addresses and payments.</p>
