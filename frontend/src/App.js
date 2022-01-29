@@ -10,7 +10,7 @@ function App() {
     
     <BrowserRouter> 
     <div className="App">
-     <Header/>
+     
       <Routes>
          <Route path="/" element={<Content/>}/>
         <Route path="/signin" element={<Signin/>}/>
@@ -18,7 +18,6 @@ function App() {
   
         
       </Routes>
-     <Footer/>
     </div>
       </BrowserRouter>
 
