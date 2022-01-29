@@ -7,17 +7,19 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Signin from './components/Signin';
 function App() {
   return (
-
-    <BrowserRouter>
-      <div className="App">
-
-        <Routes>
-          <Route path="/" element={<Content />} />
-          <Route path="/signin" element={<Signin />} />
-        </Routes>
-
-      </div>
-    </BrowserRouter>
+    
+    <BrowserRouter> 
+    <div className="App">
+     
+      <Routes>
+         <Route path="/" element={<Content/>}/>
+        <Route path="/signin" element={<Signin/>}/>
+       
+  
+        
+      </Routes>
+    </div>
+      </BrowserRouter>
 
   );
 }

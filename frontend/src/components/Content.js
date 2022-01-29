@@ -7,13 +7,13 @@ import Slider from './Slider';
 export default function Content() {
   return (
     <Layout>
-      <div><Slider />
-        <div className={styles.content}>
+    <div><Slider/>
+  <div className={styles.content}>
+ 
 
-
-          <Product1 />
-        </div>
-      </div>
-    </Layout>
-  )
+    <Product1/>
+  </div>
+  </div>
+  </Layout>
+    )
 }
