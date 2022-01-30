@@ -12,8 +12,8 @@ export default function Product({name,image,price,rating}) {
     </div>
     <div className="name">{name}</div>
     {/* <div className="category">category</div> */}
-    <div className="price">MRP:₹  {price}</div>
-    <div className="rating">rating:{rating}</div>
+    <div className="price"> <b>MRP: ₹</b> {price}</div>
+    <div className="rating"> <b>rating:</b> &nbsp; {rating}</div>
     <div className="btn">
       <div className="icon"><FontAwesomeIcon icon={faHeart}  /></div>
       <button className='add-to'>ADD TO BAG</button>

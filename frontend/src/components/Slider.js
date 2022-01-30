@@ -22,7 +22,9 @@ export default function Slider() {
       images={images}
       showBullets={true}
       showNavs={true}
-    
+      useGPURender={true}
+       slideDuration={.5}
+       autoPlay={true}
     />
   </div>
   );
