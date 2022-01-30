@@ -1,15 +1,17 @@
 import React from 'react';
 import './product.css';
-export default function Product() {
+export default function Product({name,image,price,rating}) {
   return (<div className="product">
     <div className="header">
       <div className="offer">FEATURED OFFER</div>
-      <div className="img">img</div>
+      <div className="img">
+        <img className='img' src={image}/>
+      </div>
     </div>
-    <div className="name">Plum Glow Boost Combo - Fights Acne, Hyperpigmentation & Dark Spots</div>
+    <div className="name">{name}</div>
     {/* <div className="category">category</div> */}
-    <div className="price">price</div>
-    <div className="rating">rating</div>
+    <div className="price">MRP:{price}</div>
+    <div className="rating">rating:{rating}</div>
     <div className="btn">
       <div className="icon">icon</div>
       <button className='add-to'>ADD TO BAG</button>

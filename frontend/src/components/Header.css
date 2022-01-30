@@ -1,11 +1,4 @@
-.header-fix{
-  /* overflow: hidden; */
-  /* position: fixed; */
-  /* position: sticky; */
-  /* top: 0; */
-  /* z-index: 1; */
-  
-}
+
 .header .top1{background-image:url("/public/images/naykaa.jpg");
 height: 40px;
 background-size: 100%;
