@@ -25,7 +25,7 @@ export default function CombinePage() {
             <div className="price"> <b>MRP: ₹</b> {product.price}</div>
             <div className="rating"> <b>rating:</b> &nbsp; {product.rating}</div>
             <div className="btn">
-              <div className="icon"><FontAwesomeIcon icon={faHeart}  /></div>
+              <div className="icon"><FontAwesomeIcon icon={faHeart}  className='heart' size='lg' /></div>
               <button className='add-to'>ADD TO BAG</button>
             </div>
           </div>

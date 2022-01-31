@@ -4,12 +4,7 @@ const data = {
             _id: '1',
             name: 'Nykaa Naturals Skin Potion Anti- Ageing Skincare Face Oil',
             category: 'skin care',
-<<<<<<< HEAD:backend/data.js
-            image: '/images/sk2.jpg',
-            feature:'offer',
-=======
             image:'/images/sk2.jpg',
->>>>>>> 8374d7721ffe7c76fdcb04c2cb8b570d888a9081:frontend/src/components/NykaaProduct/data.js
             price: 499,
             countInStock: 10,
             brand: 'Nykaa',

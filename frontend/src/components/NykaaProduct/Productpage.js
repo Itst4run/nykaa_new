@@ -17,7 +17,7 @@ export default function Productpage() {
         <Product
       key={product._id}
       name={product.name}
-      offer={product.feature}
+      feature={product.feature}
       price={product.price}
       rating={product.rating}
       image={product.image}

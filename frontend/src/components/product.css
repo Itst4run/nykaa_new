@@ -96,6 +96,6 @@ height: 30px;
     
     
 }
-.btn:hover .heart{color:
-rgb(252,39,121);
+.btn:hover .heart{
+    color:rgb(252,39,121);
 }

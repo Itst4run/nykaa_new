@@ -9,6 +9,7 @@ import DovePage from './components/DoveProduct/DovePage';
 import GarnierPage from './components/GarnierProduct/GarnierPage';
 import LakmePage from './components/LakmeProduct/LakmePage';
 import CombinePage from './components/CombineProduct/CombinePage';
+import Signup from './components/Signup';
 function App() {
   return (
     
@@ -18,6 +19,7 @@ function App() {
       <Routes>
          <Route path="/" element={<Content/>}/>
         <Route path="/signin" element={<Signin/>}/>
+        <Route path="/signup" element={<Signup/>}/>
         <Route path = "/product" element={<Product/>}/>
         <Route path = "/plum" element={<PlumPage/>}/>
         <Route path = "/dove" element={<DovePage/>}/>
