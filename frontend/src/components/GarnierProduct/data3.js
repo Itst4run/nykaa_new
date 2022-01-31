@@ -1,4 +1,4 @@
-const data3 = {
+export const data3 = {
     products: [
         {
             _id: '1',
@@ -74,4 +74,3 @@ const data3 = {
         },
     ],
 };
-module.exports=data3;
