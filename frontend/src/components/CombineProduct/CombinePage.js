@@ -4,6 +4,7 @@ import { combinedata } from './combinedata';
 import Layout from '../Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faHeart } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 export default function CombinePage() {
   return( 
@@ -16,9 +17,9 @@ export default function CombinePage() {
             <div className="product">
             <div className="header">
               <div className="offer">FEATURED OFFER</div>
-              <div className="img">
+              <Link to="/product/:id"> <div className="img">
                 <img className='img' src={product.image}/>
-              </div>
+              </div></Link>
             </div>
             <div className="name">{product.name}</div>
             {/* <div className="category">category</div> */}

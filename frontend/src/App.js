@@ -29,6 +29,11 @@ function App() {
         <Route path ="/lakme" element={<LakmePage/>}/>
         <Route path = "/combine" element={<CombinePage/>}/>
         <Route path="/product/:id" element={<Main_prodpage/>}/>
+        <Route path="/plum/:id" element={<Main_prodpage/>}/>
+        <Route path="/dove/:id" element={<Main_prodpage/>}/>
+        <Route path="/garnier/:id" element={<Main_prodpage/>}/>
+        <Route path="/lakme/:id" element={<Main_prodpage/>}/>
+        <Route path="/combine/:id" element={<Main_prodpage/>}/>
       </Routes>
     </div>
       </BrowserRouter>
