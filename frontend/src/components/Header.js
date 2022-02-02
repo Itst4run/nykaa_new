@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import SearchBar from './SearchBar';
 export default function Header() {
   return <div className="header">
     <div className="header-fix">
@@ -21,7 +22,7 @@ export default function Header() {
 <div className="items">NYKAA FASHION</div>
 <div className="items">BEAUTY ADVICE</div>
 <div className="items">NYKAA NETWORK</div>
-<input className='search'  type="search"   placeholder= 'Search on Nykaa' />
+<SearchBar/>
 {/* <i class="fa fa-search" style="font-size:24px"></i> */}
 <Link to ="/signin">
 <div className="account"> <img src="images/user.png" height={25}/> &nbsp; <b>Account</b></div></Link>
