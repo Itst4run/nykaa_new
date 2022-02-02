@@ -10,9 +10,11 @@ import GarnierPage from './components/GarnierProduct/GarnierPage';
 import LakmePage from './components/LakmeProduct/LakmePage';
 import CombinePage from './components/CombineProduct/CombinePage';
 import Signup from './components/Signup';
+import Main_prodpage from './components/Main_prodpage';
+import ContextWrapper from './Context/Contextwrapper';
 function App() {
   return (
-    
+    <ContextWrapper>
     <BrowserRouter> 
     <div className="App">
      
@@ -26,10 +28,11 @@ function App() {
         <Route path = "/garnier" element={<GarnierPage/>}/>
         <Route path ="/lakme" element={<LakmePage/>}/>
         <Route path = "/combine" element={<CombinePage/>}/>
-        
+        <Route path="/product/:id" element={<Main_prodpage/>}/>
       </Routes>
     </div>
       </BrowserRouter>
+      </ContextWrapper>
 
   );
 }

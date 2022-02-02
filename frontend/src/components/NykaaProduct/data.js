@@ -1,5 +1,4 @@
-const data = {
-    products: [
+const data =  [
         {
             _id: '1',
             name: 'Nykaa Naturals Skin Potion Anti- Ageing Skincare Face Oil',
@@ -77,6 +76,6 @@ const data = {
             numReviews: 15,
             description: 'high quality product',
         },
-    ],
-};
+    ]
+
 export default data;

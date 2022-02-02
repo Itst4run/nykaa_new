@@ -22,6 +22,7 @@ export default function Product1() {
       <Link to="/combine"><img src='images/p8.jpg' className={styles.p8}/></Link>
       <Link to="/combine"><img src='images/p10.jpg' className={styles.p10}/></Link>
       <Link to="/combine"><img src='images/p9.gif' className={styles.p9}/></Link>
+       <Link to='main-prodpage' src='add-to'></Link>
   </div> 
   </div> 
     </div> 

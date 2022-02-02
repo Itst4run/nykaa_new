@@ -1,17 +1,19 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import '../product.css';
 import {data1} from'./data1'
 import Layout from '../Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faHeart } from '@fortawesome/free-solid-svg-icons'
+import FilterContext from '../../Context/FilterContext';
 export default function PlumPage() {
+  let{filter2,setFilter2} =useContext(FilterContext)
     
     return( 
     <Layout>
     <div className="Productpage">
     
     {
-      data1.products.map((product) =>{
+      filter2.map((product) =>{
         console.log();
         return(
             <div className="product">

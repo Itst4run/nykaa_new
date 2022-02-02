@@ -1,5 +1,4 @@
-export const data1 = {
-    products: [
+export const data1 = [
         {
             _id: '1',
             name: 'Plum Glow Boost Combo - Fights Acne, Hyperpigmentation & Dark Spots',
@@ -37,5 +36,5 @@ export const data1 = {
             description: 'high quality product',
         },
         
-    ],
-};
+    ]
+

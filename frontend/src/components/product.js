@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './product.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faHeart } from '@fortawesome/free-solid-svg-icons'
@@ -6,9 +7,10 @@ export default function Product({name,image,price,rating,feature}) {
   return (<div className="product">
     <div className="header">
       <div className="offer">FEATURE {feature}</div>
-      <div className="img">
+     <Link to="/product/:id"> <div className="img">
         <img className='img' src={image}/>
       </div>
+      </Link>
     </div>
     <div className="name">{name}</div>
     {/* <div className="category">category</div> */}

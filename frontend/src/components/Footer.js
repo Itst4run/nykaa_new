@@ -12,7 +12,7 @@ export default function Footer() {
               Get Special Discount On Your InBox
             </div><br/>
             <div>
-              <input type="email" value="Your Email" />
+              <input type="email" placeholder="Your Email" />
               <button type="button">Send</button>
             </div>
           </div>
