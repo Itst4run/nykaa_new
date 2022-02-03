@@ -1,24 +1,27 @@
 import React from 'react';
 import '../product.css';
-import {data2} from'./data2'
+import data from '../NykaaProduct/data';
 import Layout from '../Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faHeart } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
 export default function DovePage() {
+  let DoveProduct =data.filter((ele)=>{
+    return ele.brand.toLowerCase()=='dove';
+  })
     console.log("Dove");
     return( 
         <Layout>
         <div className="Productpage">
         
         {
-          data2.products.map((product) =>{
+          DoveProduct.map((product) =>{
             return(
                 <div className="product">
                 <div className="header">
                   <div className="offer">FEATURED OFFER</div>
-                  <Link to="/doves"> <div className="img">
+                  <Link to={`/dove/${product._id}`}> <div className="img">
                     <img className='img' src={product.image}/>
                   </div></Link>
                 </div>

@@ -1,23 +1,26 @@
 import React from 'react';
 import '../product.css';
-import { combinedata } from './combinedata';
+import data from '../NykaaProduct/data';
 import Layout from '../Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faHeart } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
 export default function CombinePage() {
+  let CombineProduct =data.filter((ele)=>{
+    return ele.category.toLowerCase()=='combine';
+  })
   return( 
     <Layout>
     <div className="Productpage">
     
     {
-      combinedata.products.map((product) =>{
+      CombineProduct.map((product) =>{
         return(
             <div className="product">
             <div className="header">
               <div className="offer">FEATURED OFFER</div>
-              <Link to="/combines"> <div className="img">
+              <Link to={`/combine/${product._id}`}> <div className="img">
                 <img className='img' src={product.image}/>
               </div></Link>
             </div>

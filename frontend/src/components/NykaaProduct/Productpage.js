@@ -8,13 +8,17 @@ import FilterContext from '../../Context/FilterContext';
 // import UserContext from '../../Context/ContextCreater';
 export default function Productpage() {
   // const{products,setproducts}=useContext(UserContext)
-  let  {filter,setFilter}=useContext(FilterContext)
+  // let  {filter,setFilter}=useContext(FilterContext)
+  let nykkaProduct =data.filter((ele)=>{
+    return ele.brand.toLowerCase()=='nykaa'
+  })
+
   return( 
   <Layout>
   <div className="Productpage">
   
   {
-    filter.map((product) =>{
+    nykkaProduct.map((product) =>{
       console.log();
       return(
         <Product

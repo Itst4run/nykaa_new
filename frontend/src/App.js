@@ -28,12 +28,12 @@ function App() {
         <Route path = "/garnier" element={<GarnierPage/>}/>
         <Route path ="/lakme" element={<LakmePage/>}/>
         <Route path = "/combine" element={<CombinePage/>}/>
-        <Route path="/products" element={<Main_prodpage/>}/>
-        <Route path="/plums" element={<Main_prodpage/>}/>
-        <Route path="/doves" element={<Main_prodpage/>}/>
-        <Route path="/garniers" element={<Main_prodpage/>}/>
-        <Route path="/lakmes" element={<Main_prodpage/>}/>
-        <Route path="/combines" element={<Main_prodpage/>}/>
+        <Route path="/product/:id" element={<Main_prodpage/>}/>
+        <Route path="/plum/:id" element={<Main_prodpage/>}/>
+        <Route path="/dove/:id" element={<Main_prodpage/>}/>
+        <Route path="/garnier/:id" element={<Main_prodpage/>}/>
+        <Route path="/lakme/:id" element={<Main_prodpage/>}/>
+        <Route path="/combine/:id" element={<Main_prodpage/>}/>
       </Routes>
     </div>
       </BrowserRouter>

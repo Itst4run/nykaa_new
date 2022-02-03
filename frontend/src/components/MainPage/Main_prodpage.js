@@ -1,21 +1,37 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./Main_prodpage.css";
 import Layout from '../Layout';
+import { useParams } from 'react-router-dom';
+// import data from '../NykaaProduct/data';
+import FilterContext from '../../Context/FilterContext';
+
 export default function Main_prodpage() {
+    let{id}=useParams();
+    console.log("useparam ka id",id);
+   const {data}= useContext(FilterContext)
+   let filteredArray =data.filter((ele)=>ele._id==id);
+   console.log(filteredArray);
+   console.log(data);
     return (
         <Layout>
-            {/* console.log(Layout); */}
+            {
+             
+            }
             <div className="prodpage">
-                <div className="box">
+               {
+                   filteredArray.map((ele)=>(
+                    <div className="box">
                     <div className="left">
-                        <div className="image"></div>
+                        <div className="image"><img className='image' src={ele.image}/></div>
                     </div>
                     <div className="right">
                         <div className="div1">
-                            <div className="name">name dssvjisfdivvksjn </div>
-                            <div className="rating"><h2>Rating:</h2></div>
-                            <div className="price"><h2>Price: &nbsp;₹ </h2> <br /><br /><br />inclusive of all taxes</div>
+                            <div className="name">{ele.name}</div>
+                            <div className='rating'><h2>Brand: &nbsp;{ele.brand} </h2></div>
+                            <div className="rating"><h2>{ele.rating}</h2></div>
+                            <div className="price"><h2>Price: &nbsp;₹{ele.price} </h2> <br /><br /><br />inclusive of all taxes</div>
                             <div className="detail">
+
                                 <div className="btn1">
                                     <button className='add'>ADD TO BAG</button>
                                 </div>
@@ -44,6 +60,8 @@ export default function Main_prodpage() {
 
 
                 </div>
+                   ))
+               }
             </div>
         </Layout>
 

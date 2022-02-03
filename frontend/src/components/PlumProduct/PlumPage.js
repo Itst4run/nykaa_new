@@ -5,21 +5,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faHeart } from '@fortawesome/free-solid-svg-icons'
 import FilterContext from '../../Context/FilterContext';
 import { Link } from 'react-router-dom';
+import data from '../NykaaProduct/data';
 export default function PlumPage() {
-  let{filter2} =useContext(FilterContext)
+  
+  let PlumProduct =data.filter((ele)=>{
+    return ele.brand.toLowerCase()=='plum';
+  })
     
     return( 
     <Layout>
     <div className="Productpage">
     
     {
-      filter2.map((product) =>{
+      PlumProduct.map((product) =>{
         console.log();
         return(
             <div className="product">
             <div className="header">
               <div className="offer">FEATURED OFFER</div>
-              <Link to="/plums"> <div className="img">
+              <Link to={`/plum/${product._id}`}> <div className="img">
                 <img className='img' src={product.image}/>
               </div></Link>
             </div>

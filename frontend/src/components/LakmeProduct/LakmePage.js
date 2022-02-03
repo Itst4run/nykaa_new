@@ -1,23 +1,26 @@
 import React from 'react';
 import '../product.css';
-import { data4 } from './data4';
+import data from '../NykaaProduct/data';
 import Layout from '../Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faHeart } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
 export default function LakmePage() {
+  let LakmeProduct =data.filter((ele)=>{
+    return ele.brand.toLowerCase()=='lakme';
+  })
   return( 
     <Layout>
     <div className="Productpage">
     
     {
-      data4.products.map((product) =>{
+      LakmeProduct.map((product) =>{
         return(
             <div className="product">
             <div className="header">
               <div className="offer">FEATURED OFFER</div>
-              <Link to="/lakmes"><div className="img">
+              <Link to={`/lakme/${product._id}`}><div className="img">
                 <img className='img' src={product.image}/>
               </div></Link>
             </div>

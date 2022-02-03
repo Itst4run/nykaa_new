@@ -1,22 +1,25 @@
 import React from 'react';
 import '../product.css';
-import {data3} from'./data3'
+import data from '../NykaaProduct/data';
 import Layout from '../Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faHeart } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 export default function GarnierPage() {
+  let GarnierProduct =data.filter((ele)=>{
+    return ele.brand.toLowerCase()=='garnier';
+  })
   return ( 
     <Layout>
     <div className="Productpage">
     
     {
-      data3.products.map((product) =>{
+      GarnierProduct.map((product) =>{
         return(
             <div className="product">
             <div className="header">
               <div className="offer">FEATURED OFFER</div>
-              <Link to="/garniers"><div className="img">
+              <Link to={`/garnier/${product._id}`}><div className="img">
                 <img className='img' src={product.image}/>
               </div></Link>
             </div>
