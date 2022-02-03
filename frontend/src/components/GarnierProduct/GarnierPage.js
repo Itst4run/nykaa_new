@@ -16,7 +16,7 @@ export default function GarnierPage() {
             <div className="product">
             <div className="header">
               <div className="offer">FEATURED OFFER</div>
-              <Link to="/product/:id"><div className="img">
+              <Link to="/garniers"><div className="img">
                 <img className='img' src={product.image}/>
               </div></Link>
             </div>

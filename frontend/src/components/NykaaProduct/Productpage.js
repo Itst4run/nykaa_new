@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 
 import './Productpage.css';
 import Layout from '../Layout';
-import Product from '../product';
+import Product from './product';
 import data from './data';
 import FilterContext from '../../Context/FilterContext';
 // import UserContext from '../../Context/ContextCreater';
