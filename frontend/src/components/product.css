@@ -5,9 +5,11 @@ height: 470px;
 margin: 5px;
 display: flex;
 flex-direction: column;
-
+box-sizing: border-box;
 }
 .product .header{
+box-sizing: border-box;
+
     height: 100%;
     width: 100%;
     background-color: white;
@@ -36,26 +38,29 @@ padding: 0px 10px;
     color: rgb(252,39,121);
 }
 .product .name{
-    height: 90px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px 10px 10px 10px;
     font-size: 15px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
     margin-top: 10px;
+box-sizing: border-box;
+
 }
 .product .price{
     /* height: 40px; */
     /* padding-bottom: 10px; */
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .product .rating{
-    /* height: 40px; */
+    height: 40px;
         /* padding: 10px; */
         margin-bottom:10px ;
     display: flex;
@@ -72,6 +77,8 @@ height: 30px;
     flex-direction: row;
      align-items: center;
     justify-content: center;
+box-sizing: border-box;
+
 }.btn .add-to{
     width:280px;
     margin: 0;

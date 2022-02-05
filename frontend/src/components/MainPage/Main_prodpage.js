@@ -22,13 +22,13 @@ export default function Main_prodpage() {
                    filteredArray.map((ele)=>(
                     <div className="box">
                     <div className="left">
-                        <div className="image"><img className='image' src={ele.image}/></div>
+                        <div ><img className='image' src={ele.image} height={30}/></div>
                     </div>
                     <div className="right">
                         <div className="div1">
                             <div className="name">{ele.name}</div>
-                            <div className='rating'><h2>Brand: &nbsp;{ele.brand} </h2></div>
-                            <div className="rating"><h2>{ele.rating}</h2></div>
+                            {/* <div className='rating'><h2>Brand: &nbsp;{ele.brand} </h2></div> */}
+                            <div className="rating"><h2>RATING : {ele.rating}</h2></div>
                             <div className="price"><h2>Price: &nbsp;₹{ele.price} </h2> <br /><br /><br />inclusive of all taxes</div>
                             <div className="detail">
 
