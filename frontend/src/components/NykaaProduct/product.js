@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faHeart } from '@fortawesome/free-solid-svg-icons'
 import data from './data';
-export default function Product({name,image,price,rating,feature}) {
+import CartContext from '../../Context/CartContext';
+export default function Product({name,image,price,rating,feature, countInStock}) {
+
+let {addToCart} = useContext(CartContext)
+  function handleClick(){
+
+    addToCart(name,price,countInStock)
+  }
+
+
+  // function addToCart(id, name, price,image,category,brand,countInStock){
+
   return (<div className="product">
     <div className="header">
       <div className="offer">FEATURE {feature}</div>
@@ -18,7 +29,7 @@ export default function Product({name,image,price,rating,feature}) {
     <div className="rating"> <b>rating:</b> &nbsp; {rating}</div>
     <div className="btn">
       <div className="icon"><FontAwesomeIcon icon={faHeart} className='heart' size='lg' /></div>
-      <button className='add-to'>ADD TO BAG</button>
+      <button className='add-to' onClick={handleClick}>ADD TO BAG</button>
     </div>
   </div>)
 

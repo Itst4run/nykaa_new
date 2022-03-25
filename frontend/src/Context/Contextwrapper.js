@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import UserContext from './ContextCreater';
 import FilterContext from './FilterContext';
 import data from '../components/NykaaProduct/data';
+import CartContext from './CartContext';
 
 export default function ContextWrapper({ children }) {
   const [user, setuser] = useState('');
@@ -76,13 +77,33 @@ export default function ContextWrapper({ children }) {
   }
 
 
+  const [cart, setCart] = useState([])
+  function addToCart(id, name, price,image,category,brand,countInStock){
+    let search = cart.find(item=> item.id === id);
+    if(search.countInStock > search.countInCart +1){
+      search.countInCart += 1;
+      setCart([...cart])
+    }else{
+      cart.push({
+        id,
+        name,
+        price,
+        category,
+        brand,
+        countInCart: 1
+      })
+      setCart([...cart])
+    }
+  }
 
 
   return (
+    <CartContext.Provider value={{cart}}>
     <FilterContext.Provider value={{ handlechange, showbar, linkNykaa, linkPlum,linkDove,linkLakme,linkGarnier,linkCombine,user,handleclick,data }}>
       <UserContext.Provider value={{ user, setuser, products, setproducts }}>
         {children}
       </UserContext.Provider>
     </FilterContext.Provider>
+    </CartContext.Provider>
   )
 }

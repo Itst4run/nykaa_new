@@ -1,136 +1,133 @@
-
-.header .top1{background-image:url("/public/images/naykaa.jpg");
-height: 40px;
-background-size: 100%;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-font-size: 14px;
-font-weight:500;
-position: fixed;
-width: 100%;
-top: 0;
+.header .top1 {
+  background-image: url("/public/images/naykaa.jpg");
+  height: 40px;
+  background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  position: fixed;
+  width: 100%;
+  top: 0;
   z-index: 1;
   /* top: 0; */
- 
-/* position: fixed; */
+
+  /* position: fixed; */
 }
-.header .top1 .get-app{
-  margin-left:  45%;
+.header .top1 .get-app {
+  margin-left: 45%;
   border-right: 1px solid black;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
 }
-.header .top1 .icons{
+.header .top1 .icons {
   padding: 10px;
   height: 2px;
   border-left: 1px solid black;
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.header .top1 .help{
+.header .top1 .help {
   padding: 10px;
   height: 2px;
   border-left: 2px solid black;
   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.header .top2{
-  height:65px;
-  background-color:white;
-   display: flex;
-   width: 100%;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-position: fixed;
+.header .top2 {
+  height: 65px;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
   z-index: 1;
   top: 40px;
 }
-.header .top2 .items{
-margin: 10px;
-font-size: 14px;
-font-weight: 500;
+.header .top2 .items {
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 500;
 }
-.header .top2 .search{
+.header .top2 .search {
   height: 35px;
   width: 220px;
-  background-color:rgb(241, 238, 238) ;
-  border:none;
+  background-color: rgb(241, 238, 238);
+  border: none;
   border-radius: 5px;
-  
-
 }
-.header .top2 .account{
+.header .top2 .account {
   color: rgb(87, 87, 87);
-   font-size: 14px;
-   margin-left: 20px;
+  font-size: 14px;
+  margin-left: 20px;
 }
-.header .top2 .bag{
+.header .top2 .bag {
   margin-left: 20px;
 }
 .header .top2 .search {
-    outline-color: rgb(255, 0, 106);   
+  outline-color: rgb(255, 0, 106);
 }
- .top3{
-  height:50px;
+.top3 {
+  height: 50px;
   color: rgb(131, 130, 130);
   font-size: 14px;
   font-weight: 500;
-  background-color:white;
-   display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-border: 1px solid rgb(197, 197, 197);
-width: 100%;
-margin-top:100px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  width: 100%;
+  margin-top: 100px;
 }
-.header .top3 .items{
-margin: 10px 20px 15px 20px;
-
+.header .top3 .items {
+  margin: 10px 20px 15px 20px;
 }
-.header .top3 .bag{
+.header .top3 .bag {
   width: 50px;
   padding-left: 20px;
 }
-.header .top1 .icons:hover{
+.header .top1 .icons:hover {
   cursor: pointer;
   color: rgb(255, 0, 106);
 }
-.header .top1 .get-app:hover{
+.header .top1 .get-app:hover {
   cursor: pointer;
   color: rgb(255, 0, 106);
 }
-.header .top1 .help:hover{
+.header .top1 .help:hover {
   cursor: pointer;
   color: rgb(255, 0, 106);
 }
 
-.header .top2 .items:hover{
-color: rgb(255, 0, 106);
-cursor: pointer;
+.header .top2 .items:hover {
+  color: rgb(255, 0, 106);
+  cursor: pointer;
 }
-.header .top2 .account:hover{
+.header .top2 .account:hover {
   cursor: pointer;
   color: rgb(255, 0, 106);
 }
-.header .top2 .bag:hover{
+.header .top2 .bag:hover {
   cursor: pointer;
 }
-.header .top3 .items:hover{
+.header .top3 .items:hover {
   cursor: pointer;
   color: rgb(255, 0, 106);
 }
-.header .top3 .sale:hover{
+.header .top3 .sale:hover {
   cursor: pointer;
   color: rgb(255, 0, 106);
 }
